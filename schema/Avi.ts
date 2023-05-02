@@ -5,6 +5,7 @@ export default {
   access: allowAll,
   fields: {
     note: decimal({ validation: { isRequired: true } }),
+    reste: decimal({ validation: { isRequired: true } }),
     user: relationship({ref: 'User', many: false}),
     trajet: relationship({ref: 'Trajet', many: false}), 
   },
