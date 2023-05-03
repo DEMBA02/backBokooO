@@ -193,6 +193,7 @@ model Reservation {
 model Avi {
   id                  String      @id @default(cuid())
   note                Decimal     @mysql.Decimal(18, 4)
+  reste               Decimal     @mysql.Decimal(18, 4)
   user                User?       @relation("Avi_user", fields: [userId], references: [id])
   userId              String?     @map("user")
   trajet              Trajet?     @relation("Avi_trajet", fields: [trajetId], references: [id])

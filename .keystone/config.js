@@ -434,6 +434,7 @@ var Avi_default = {
   access: import_access13.allowAll,
   fields: {
     note: (0, import_fields13.decimal)({ validation: { isRequired: true } }),
+    reste: (0, import_fields13.decimal)({ validation: { isRequired: true } }),
     user: (0, import_fields13.relationship)({ ref: "User", many: false }),
     trajet: (0, import_fields13.relationship)({ ref: "Trajet", many: false })
   }

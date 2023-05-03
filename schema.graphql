@@ -1169,6 +1169,7 @@ input VoyageurRelateToOneForCreateInput {
 type Avi {
   id: ID!
   note: Decimal
+  reste: Decimal
   user: User
   trajet: Trajet
 }
@@ -1185,6 +1186,7 @@ input AviWhereInput {
   NOT: [AviWhereInput!]
   id: IDFilter
   note: DecimalFilter
+  reste: DecimalFilter
   user: UserWhereInput
   trajet: TrajetWhereInput
 }
@@ -1203,10 +1205,12 @@ input DecimalFilter {
 input AviOrderByInput {
   id: OrderDirection
   note: OrderDirection
+  reste: OrderDirection
 }
 
 input AviUpdateInput {
   note: Decimal
+  reste: Decimal
   user: UserRelateToOneForUpdateInput
   trajet: TrajetRelateToOneForUpdateInput
 }
@@ -1218,6 +1222,7 @@ input AviUpdateArgs {
 
 input AviCreateInput {
   note: Decimal
+  reste: Decimal
   user: UserRelateToOneForCreateInput
   trajet: TrajetRelateToOneForCreateInput
 }
